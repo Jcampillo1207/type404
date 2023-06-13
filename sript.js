@@ -20,15 +20,101 @@ function cambiarTexto() {
   }
 }
 
-cambiarTexto();
+function limpiarTexto(element) {
+  if (element.value === 'Correo electrónico') {
+    element.value = '';
+  }
+}
 
-window.addEventListener("resize", function() {
-  cambiarTexto();
+function restaurarTexto(element) {
+  if (element.value === '') {
+    element.value = 'Correo electrónico';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var container = document.querySelector('.evo');
+  var textElement = document.querySelector('.evoT');
+  var cloneElement = textElement.cloneNode(true);
+  var containerWidth = container.offsetWidth;
+  var textWidth = textElement.offsetWidth;
+  var isPlaying = false;
+
+  container.appendChild(cloneElement);
+
+  function startAnimation() {
+    if (isPlaying) {
+      return;
+    }
+
+    isPlaying = true;
+
+    function animate() {
+      if (!isElementInViewport(container)) {
+        isPlaying = false;
+        return;
+      }
+
+      var position = containerWidth;
+
+      function moveText() {
+        position--;
+
+        if (position < -textWidth) {
+          position = containerWidth;
+        }
+
+        textElement.style.transform = 'translateX(' + position + 'px)';
+        cloneElement.style.transform = 'translateX(' + (position + textWidth) + 'px)';
+
+        if (isPlaying) {
+          requestAnimationFrame(moveText);
+        }
+      }
+
+      moveText();
+    }
+
+    animate();
+  }
+
+  function isElementInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  window.addEventListener('scroll', function() {
+    if (isElementInViewport(container)) {
+      startAnimation();
+    }
+  });
 });
 
-function limpiarTexto(element) {
-  element.value = '';
-}
+// document.addEventListener('DOMContentLoaded', function() {
+//   var container = document.querySelector('.evo');
+//   var textElement = document.querySelector('.evoT');
+//   var position = container.offsetWidth; // Iniciar desde el borde derecho
+//   var speed = 3; // Velocidad del movimiento en píxeles por fotograma
+
+//   function moverTexto() {
+//     position -= speed;
+//     textElement.style.left = position + 'px';
+
+//     // Reiniciar posición cuando el texto ha salido completamente del contenedor
+//     if (position < -textElement.offsetWidth) {
+//       position = container.offsetWidth;
+//     }
+
+//     requestAnimationFrame(moverTexto);
+//   }
+
+//   moverTexto();
+// });
 
 
 

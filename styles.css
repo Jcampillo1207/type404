@@ -330,6 +330,7 @@ body {
 .formC {
     width: 100%;
     height: 10vh;
+    margin-bottom: 20px;
 }
 
 .formulario {
@@ -351,8 +352,7 @@ body {
     justify-content: space-around;
 }  
 
-  .formulario label,
-  .formulario input {
+  .txtF {
     display: flex;
     flex-direction: column;
     width: 10%;
@@ -360,8 +360,7 @@ body {
     font-size: 20px;
   }
 
-  .formulario input[type="text"],
-  .formulario input[type="email"] {
+  .inputF {
     width: 50%;
     height: auto;
     padding: 10px;
@@ -376,11 +375,34 @@ body {
     width: 25%;
   }
 
+  .evo {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .evoT {
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    width: max-content;
+    position: relative;
+    font-weight: 400;
+  }
+
+  .am {
+    color: #ffcc00;
+  }
+
 @media (max-width: 768px) {
 
     .container {
         justify-content: space-around;
         background-color: white;
+        z-index: 999999;
     }
 
     .logoheader {
@@ -504,5 +526,48 @@ body {
 
     .card3 .cta {
         width: 90%;
+    }
+
+    .cont4 {
+        height: 200vh !important;
+    }
+
+    .contenido4 {
+        flex-direction: column-reverse;
+        width: 95%;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .conT4 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .notime {
+        width: 100%;
+        height: 47%;
+    }
+
+    .formC {
+        height: 20vh;
+    }
+
+    .forma {
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .txtF {
+        width: 90%;
+        height: auto;
+    }
+
+    .inputF {
+        width: 90%;
+    }
+
+    .forma .cta {
+        width: 95%;
     }
 }
