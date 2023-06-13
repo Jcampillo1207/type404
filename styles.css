@@ -48,7 +48,13 @@ body {
 }
 
 .highlight {
-    background-color: #ffcc0060;
+    background-color: #ffcc0092;
+    color: #181818;
+}
+
+.highlight2 {
+    background-color: #ffcc00;
+    color: #464646;
 }
 
 .conT4 .cta {
@@ -73,13 +79,10 @@ body {
     transition: .5s ease;
 }
 
-.logoheader span {
+.logoheader:hover span {
+    background-color: #464646;
     color: #ffcc00;
     transition: .5s ease;
-}
-
-.logoheader:hover span {
-    color: #464646;
 }
 
 .logoheader:hover {
