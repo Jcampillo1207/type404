@@ -1,6 +1,22 @@
 /* font-family: 'Inter', sans-serif;
 font-family: 'Jost', sans-serif; */
 
+@keyframes entrada-divertida {
+    0% {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .entrada-divertida {
+    opacity: 0; /* Inicialmente oculto */
+    animation: entrada-divertida .5s ease-in-out forwards;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -250,6 +266,11 @@ body {
     position: absolute;
     width: 60%;
     z-index: 9999;
+    background-color: white;
+}
+
+.card3 .cta:hover {
+    background-color: #181818;
 }
 
 .cont4 {
@@ -306,6 +327,54 @@ body {
     color: #464646;
 }
 
+.formC {
+    width: 100%;
+    height: 10vh;
+}
+
+.formulario {
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #181818;
+    border-radius: 15px;
+  }
+
+.forma {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}  
+
+  .formulario label,
+  .formulario input {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+  }
+
+  .formulario input[type="text"],
+  .formulario input[type="email"] {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: all .3s ease-out;
+    font-family: "Jost", "sans-serif";
+    color: #5b5b5b;
+  }
+
+  .formulario .cta {
+    width: 25%;
+  }
 
 @media (max-width: 768px) {
 

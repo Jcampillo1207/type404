@@ -26,6 +26,9 @@ window.addEventListener("resize", function() {
   cambiarTexto();
 });
 
+function limpiarTexto(element) {
+  element.value = '';
+}
 
 
 
