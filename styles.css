@@ -47,6 +47,10 @@ body {
     background-color: white;
 }
 
+.highlight {
+    background-color: #ffcc0060;
+}
+
 .conT4 .cta {
     width: 90%;
 }
