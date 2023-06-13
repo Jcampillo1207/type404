@@ -97,6 +97,7 @@ body {
     /* margin-right: 20px; */
 }
 
+
 .conT ul {
     list-style: none;
     display: flex;
@@ -115,6 +116,17 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     margin: 0 10px;
+    stroke: #181818;
+}
+
+.insta a {
+    color: #181818;
+    fill: white;
+    stroke: #181818;
+}
+
+.insta a:hover {
+    color: #ffcc00;
 }
 
 .conT ul li:hover {
@@ -387,13 +399,14 @@ body {
     font-size: 20px;
   }
 
-  .iconH {
+  .insta .iconH {
     fill: white;
   }
 
   .insta .iconH:hover {
     stroke: #ffcc00;
   }
+
   .inputF {
     width: 50%;
     height: auto;
