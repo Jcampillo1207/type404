@@ -91,7 +91,7 @@ body {
 
 .conT {
     min-width: 20%;
-    width: auto;
+    /* width: 20%; */
     margin-right: 2%;
     transition: all .5s ease-out;
     /* margin-right: 20px; */
@@ -102,6 +102,11 @@ body {
     display: flex;
     justify-content: space-between;
     margin-right: 0;
+    align-items: center;
+}
+
+.conT ul li .cta {
+    width: 100%;
 }
 
 .conT ul li {
