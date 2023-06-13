@@ -433,12 +433,16 @@ body {
 
     .conT ul {
         justify-content: end;
-        margin-right: 4%;
+        margin-right: 1%;
+    }
+
+    .conT {
+        width: 30%;
     }
 
     .conT ul li {
     display: none;
-    font-size: 18px;
+    font-size: 15px;
     }
 
     .display {
