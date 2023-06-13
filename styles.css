@@ -66,7 +66,7 @@ body {
     margin-left: 2%;
     cursor: pointer;
     color: #464646;
-    transition: .5s ease-in-out;
+    transition: .5s ease;
 }
 
 .logoheader span {
@@ -82,16 +82,18 @@ body {
 }
 
 .conT {
-    min-width: 40%;
+    min-width: 20%;
     width: auto;
     margin-right: 2%;
     transition: all .5s ease-out;
+    /* margin-right: 20px; */
 }
 
 .conT ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    margin-right: 50px;
 }
 
 .conT ul li {
@@ -269,6 +271,7 @@ body {
     overflow: hidden;
     filter: opacity(.2);
     pointer-events: none;
+    user-select: none;
 }
 
 .card3 .cta {
@@ -369,6 +372,13 @@ body {
     font-size: 20px;
   }
 
+  .iconH {
+    fill: white;
+  }
+
+  .insta .iconH:hover {
+    stroke: #ffcc00;
+  }
   .inputF {
     width: 50%;
     height: auto;
@@ -377,7 +387,7 @@ body {
     border-radius: 25px;
     transition: all .3s ease-out;
     font-family: "Jost", "sans-serif";
-    color: #5b5b5b;
+    color: #878787;
   }
 
   .formulario .cta {
@@ -478,8 +488,8 @@ body {
     }
     
     .img1 {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
 
     .smallC {
