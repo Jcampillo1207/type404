@@ -71,6 +71,7 @@ body {
 
 .logoheader span {
     color: #ffcc00;
+    transition: .5s ease;
 }
 
 .logoheader:hover span {
@@ -182,9 +183,9 @@ body {
 }
 
 .cta:hover {
-    border: 2px solid transparent;
-    background-color: #181818;
-    color: white;
+    border: 2px solid #181818;
+    background-color: #ffcc00;
+    color: #181818;
     transition: all .5s ease-in-out;
 }
 
@@ -282,7 +283,8 @@ body {
 }
 
 .card3 .cta:hover {
-    background-color: #181818;
+    background-color: #ffcc00;
+    color: #181818;
 }
 
 .cont4 {
