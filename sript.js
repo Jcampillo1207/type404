@@ -1,3 +1,13 @@
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+ document.title = "Regresa :("; 
+})
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+})
+
+
 var textos = ["Contact Us", "Contactez-nous", "Contáctanos", "Contate-nos", "联系我们"];
 var indice = 0;
 var verificado = false;
