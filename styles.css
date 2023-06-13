@@ -529,7 +529,7 @@ body {
     }
 
     .cont4 {
-        height: 200vh !important;
+        height: 180vh !important;
     }
 
     .contenido4 {
@@ -541,33 +541,52 @@ body {
 
     .conT4 {
         width: 100%;
-        height: 50%;
+        height: 48%;
     }
 
     .notime {
         width: 100%;
-        height: 47%;
+        height: 48%;
+    }
+
+    .textC4 {
+        font-size: 45px;
+        height: 30%;
     }
 
     .formC {
-        height: 20vh;
+        height: 25vh;
     }
 
     .forma {
         flex-direction: column;
         height: 90%;
+        width: 90%;
     }
 
     .txtF {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
     .inputF {
-        width: 90%;
+        width: calc(100% - 20px);
     }
 
     .forma .cta {
+        width: 100%;
+    }
+
+    .evo {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .evoT {
+        height: 90%;
         width: 95%;
     }
 }
