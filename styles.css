@@ -100,8 +100,9 @@ body {
 .conT ul {
     list-style: none;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 0;
 }
 
 .conT ul li {
