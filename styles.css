@@ -66,6 +66,15 @@ body {
     margin-left: 2%;
     cursor: pointer;
     color: #464646;
+    transition: .5s ease-in-out;
+}
+
+.logoheader span {
+    color: #ffcc00;
+}
+
+.logoheader:hover span {
+    color: #464646;
 }
 
 .logoheader:hover {
@@ -406,7 +415,8 @@ body {
     }
 
     .logoheader {
-        font-size: 30px;
+        font-size: 25px;
+        font-weight: 500;
     }
 
     .conT ul {
