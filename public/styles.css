@@ -79,6 +79,15 @@ body {
     transition: .5s ease;
 }
 
+.display a {
+    text-decoration: none;
+    color: #464646;
+}
+
+.display a:hover {
+    color: #ffcc00;
+}
+
 .logoheader:hover span {
     background-color: #464646;
     color: #ffcc00;
