@@ -160,6 +160,11 @@ body {
     align-items: center;
 }
 
+.highlight {
+    background-color: #ffcc00;
+    width: calc(100% + 5px);
+}
+
 .imglogin {
     width: 40%;
     height: 95%;
@@ -178,6 +183,7 @@ body {
 }
 
 .titlog {
+    color: #464646;
     width: 100%;
     height: auto;
     font-size: 35px;
@@ -205,9 +211,17 @@ body {
     border: 2px solid #181818;
 }
 
+.inputF::before {
+    border: 2px solid #181818 !important;           
+}
+
+.inputF:valid {
+    border: 2px solid #ffcc00;
+}
+
 .linea {
     width: 100%;
-    border: 2px solid #181818;
+    border: 1px solid #181818;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -215,6 +229,7 @@ body {
 .buttoncont {
     margin-top: 20px;
     width: 100%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,11 +237,11 @@ body {
 
 .cta1 {
     font-family: 'Jost', sans-serif;
-    height: auto;
+    height: 100%;
     margin-top: 0;
     font-size: 15px;
     padding: 10px;
-    width: 90%;
+    width: 88%;
     background-color: transparent;
     border-radius: 25px;
     border: 2px solid #464646;
@@ -240,7 +255,7 @@ body {
     margin-top: 0;
     font-size: 15px;
     padding: 5px;
-    /* width: 60%; */
+    width: 100%;
     background-color: transparent;
     border-radius: 25px;
     border: 2px solid #464646;
@@ -262,6 +277,30 @@ body {
 .icon {
     width: 80%;
     height: 80%;
+}
+
+.password {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconeye {
+    position: absolute;
+    margin-bottom: 15px;
+    right: 10px;
+}
+
+.iconeye:hover .feather-eye {
+    cursor: pointer;
+    stroke: #ffcc00;
+}
+
+.cove {
+    height: 100%;
+    width: 10%;
 }
 
 
@@ -291,9 +330,28 @@ body {
     .imglogin {
         width: 95%;
         height: 50%;
+        object-fit: cover;
     }
 
     .cta1 {
         width: 80%;
+        padding: 0;
+    }
+
+    .formulario {
+        height: 60%;
+    }
+
+    .buttoncont {
+        height: 10%;
+    }
+
+    .cove {
+        width: 18%;
+    }
+
+    .imglogin1 {
+        width: auto;
+        height: 100%;
     }
 }
