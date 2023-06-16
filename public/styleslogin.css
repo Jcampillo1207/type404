@@ -1,0 +1,299 @@
+@keyframes entrada-divertida {
+    0% {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .entrada-divertida {
+    opacity: 0; /* Inicialmente oculto */
+    animation: entrada-divertida .5s ease-in-out forwards;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #181818;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00;
+  }
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: white;
+}
+
+.highlight {
+    background-color: #ffcc0092;
+    color: #181818;
+}
+
+.highlight2 {
+    background-color: #ffcc00;
+    color: #464646;
+}
+
+.conT4 .cta {
+    width: 90%;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    display: flex;
+    /* padding-top: 10px; */
+    flex-direction: row;
+    width: 100%;
+    /* margin: 0 40px; */
+}
+.logoheader {
+    font-size: 20px;
+    margin-left: 2%;
+    cursor: pointer;
+    color: #464646;
+    transition: .5s ease;
+}
+
+.logoheader a {
+    text-decoration: none;
+    color: #464646;
+}
+
+.logoheader:hover span {
+    background-color: #464646;
+    color: #ffcc00;
+    transition: .5s ease;
+}
+
+.logoheader:hover a{
+    color: #ffcc00;
+}
+
+.conT {
+    min-width: 10%;
+    width: auto;
+    margin-right: 2%;
+    transition: all .5s ease-out;
+    /* margin-right: 20px; */
+}
+
+
+.conT ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: center;
+    width: 100%;
+}
+
+.conT ul li .cta {
+    width: auto;
+}
+
+.conT ul li {
+    color: #464646;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 10px;
+    stroke: #181818;
+}
+
+.insta a {
+    color: #181818;
+    fill: white;
+    stroke: #181818;
+}
+
+.insta a:hover {
+    color: #ffcc00;
+}
+
+.conT ul li:hover .iconH {
+    color: #ffcc00;
+    cursor: pointer;
+    animation: .5s ease-out;
+    font-weight: 400;
+}
+
+.conT ul li:after {
+    color: #ffcc00;
+}
+
+.login {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerform {
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+    border: 2px solid #181818;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imglogin {
+    width: 40%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 40%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titlog {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lbl {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.inputF {
+    width: calc(100% - 10px);
+    height: 5vh;
+    margin-bottom: 20px;
+    font-family: "Jost", sans-serif;
+    padding-left: 10px;
+    border-radius: 15px;
+    border: 2px solid #181818;
+}
+
+.linea {
+    width: 100%;
+    border: 2px solid #181818;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttoncont {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta1 {
+    font-family: 'Jost', sans-serif;
+    height: auto;
+    margin-top: 0;
+    font-size: 15px;
+    padding: 10px;
+    width: 90%;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid #464646;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.cta2 {
+    font-family: 'Jost', sans-serif;
+    height: 100%;
+    margin-top: 0;
+    font-size: 15px;
+    padding: 5px;
+    /* width: 60%; */
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid #464646;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta1:hover {
+    background-color: #ffcc00;
+}
+
+.cta2:hover {
+    background-color: #ffcc00;
+}
+
+.icon {
+    width: 80%;
+    height: 80%;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .login {
+        height: 150vh;
+    }
+    .container {
+        justify-content: space-around;
+    }
+
+    .containerform {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 90%;
+        height: 60%;
+    }
+
+    .titlog {
+        font-size: 25px;
+    }
+
+    .imglogin {
+        width: 95%;
+        height: 50%;
+    }
+
+    .cta1 {
+        width: 80%;
+    }
+}
